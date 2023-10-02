@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -26,4 +27,35 @@ nav {
 .logo {
   height: 25px;
   width: auto;
+}
+
+/*Styling for Hero Section */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.photo-grid {
+  width: 70%;
+  padding: 2rem 0;
+}
+
+.hero-content{
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero--paragraph {
+  width: 65%;
 }
