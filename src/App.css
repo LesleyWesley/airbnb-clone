@@ -24,6 +24,14 @@ nav {
   box-shadow: 0 2px 8px rgba(0 , 0, 0, 10%);
 }
 
+.grey {
+  color: #918E9B;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .logo {
   height: 25px;
   width: auto;
@@ -38,9 +46,13 @@ nav {
   flex-direction: column;
 }
 
+section {
+  padding: 20px;
+}
+
 .photo-grid {
   width: 70%;
-  padding: 2rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .hero-content{
@@ -57,5 +69,26 @@ h1 {
 }
 
 .hero--paragraph {
-  width: 65%;
+  max-width: 325px;
+}
+
+/*Styling for Card Component*/
+
+.card {
+  width: 175px;
+  font-size: 12px;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
 }
