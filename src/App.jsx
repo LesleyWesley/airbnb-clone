@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import articlePic from "./assets/katie-zaferes.png"
 import './App.css'
 import Navbar from "./components/Navbar.jsx"
 import Hero from "./components/Hero.jsx"
@@ -12,7 +13,14 @@ function App() {
     <div>
       <Navbar />
       <main>
-        <Card />
+        <Card
+          img={articlePic}
+          rating="5.0"
+          reviewCount={6}
+          country="USA"
+          title="Life Lessons with Katie Zaferes"
+          price={136}
+        />
       </main>
     </div>
   )
