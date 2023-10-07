@@ -1,26 +1,35 @@
 
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import articlePic from "./assets/katie-zaferes.png"
+//import articlePic from "./assets/katie-zaferes.png"
 import './App.css'
 import Navbar from "./components/Navbar.jsx"
 import Hero from "./components/Hero.jsx"
 import Card from "./components/Card.jsx"
+import data from "./data.js"
+
+console.log(data);
 
 function App() {
+
+  const cards = data.map(item => {
+    return (
+      <Card
+        img={item.coverImg}
+        rating={item.stats.rating}
+        reviewCount={item.stats.reviewCount}
+        country={item.location}
+        title={item.title}
+        price={item.price}
+      />
+    )
+  })
+
+
   return (
     <div>
       <Navbar />
       <main>
-        <Card
-          img={articlePic}
-          rating="5.0"
-          reviewCount={6}
-          country="USA"
-          title="Life Lessons with Katie Zaferes"
-          price={136}
-        />
+        {cards}
       </main>
     </div>
   )
